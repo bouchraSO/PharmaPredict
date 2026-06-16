@@ -16,9 +16,16 @@ La gestion des stocks dans le secteur pharmaceutique est un défi majeur. Une ma
   <img width="1891" height="909" alt="image" src="https://github.com/user-attachments/assets/d3a2639a-8fda-4802-9ac0-092fb5c75f72" />
 
 - 🧠 **Prédiction par Intelligence Artificielle** : Modèle Random Forest prédisant la demande en tenant compte du contexte temporel marocain.
+<img width="1645" height="848" alt="image" src="https://github.com/user-attachments/assets/1f21c019-a5e4-4768-9ecf-197ad39edf4f" />
+
 - ⚠️ **Recommandations de réapprovisionnement** : Génération automatique des seuils de sécurité, des priorités (HAUTE, MOYENNE, BASSE) et des quantités exactes à commander.
+  <img width="1625" height="835" alt="image" src="https://github.com/user-attachments/assets/ac5685ee-4c6b-4809-9793-87e63dd38829" />
+
 - 🧪 **Simulateur de prédiction** : Interface permettant de simuler un scénario futur (ex: "Que se passe-t-il si mon stock est de X la veille de l'Aïd ?").
+  <img width="927" height="706" alt="image" src="https://github.com/user-attachments/assets/9cde62b7-4abd-400d-a6ff-6a542f698a7a" />
+
 - 🔍 **Transparence du modèle** : Page dédiée affichant les métriques de performance (MAE, R²) et l'importance des variables (Feature Importance).
+<img width="1625" height="834" alt="image" src="https://github.com/user-attachments/assets/b78b898d-7719-41d8-8fb4-de02ec2a2247" />
 
 ## 🏗️ Architecture du Système
 
