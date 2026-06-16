@@ -13,6 +13,8 @@ La gestion des stocks dans le secteur pharmaceutique est un défi majeur. Une ma
 ## ✨ Fonctionnalités Principales
 
 - 📊 **Tableau de bord analytique** : Visualisation des KPIs, tendances de vente, et impact des saisons/jours fériés.
+  <img width="1891" height="909" alt="image" src="https://github.com/user-attachments/assets/d3a2639a-8fda-4802-9ac0-092fb5c75f72" />
+
 - 🧠 **Prédiction par Intelligence Artificielle** : Modèle Random Forest prédisant la demande en tenant compte du contexte temporel marocain.
 - ⚠️ **Recommandations de réapprovisionnement** : Génération automatique des seuils de sécurité, des priorités (HAUTE, MOYENNE, BASSE) et des quantités exactes à commander.
 - 🧪 **Simulateur de prédiction** : Interface permettant de simuler un scénario futur (ex: "Que se passe-t-il si mon stock est de X la veille de l'Aïd ?").
