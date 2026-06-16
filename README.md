@@ -14,7 +14,8 @@ La gestion des stocks dans le secteur pharmaceutique est un défi majeur. Une ma
 
 - 📊 **Tableau de bord analytique** : Visualisation des KPIs, tendances de vente, et impact des saisons/jours fériés.
   <img width="1891" height="909" alt="image" src="https://github.com/user-attachments/assets/d3a2639a-8fda-4802-9ac0-092fb5c75f72" />
-
+- 🔍 **Médicaments** : Affiche l'état du stock en temps réel avec un code couleur (rouge si critique, vert si suffisant) et permet d'accéder à l'audit détaillé de chaque produit en un clic.
+<img width="1633" height="746" alt="image" src="https://github.com/user-attachments/assets/b0e80af4-0bda-4ab8-8163-3ddf9ceeb2bc" />
 - 🧠 **Prédiction par Intelligence Artificielle** : Modèle Random Forest prédisant la demande en tenant compte du contexte temporel marocain.
 <img width="1645" height="848" alt="image" src="https://github.com/user-attachments/assets/1f21c019-a5e4-4768-9ecf-197ad39edf4f" />
 
@@ -26,6 +27,7 @@ La gestion des stocks dans le secteur pharmaceutique est un défi majeur. Une ma
 
 - 🔍 **Transparence du modèle** : Page dédiée affichant les métriques de performance (MAE, R²) et l'importance des variables (Feature Importance).
 <img width="1625" height="834" alt="image" src="https://github.com/user-attachments/assets/b78b898d-7719-41d8-8fb4-de02ec2a2247" />
+
 
 ## 🏗️ Architecture du Système
 
