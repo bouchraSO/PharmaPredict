@@ -1,7 +1,7 @@
 
 # 💊 PharmaPredict - Medication Demand Prediction & Restocking API
 
-**Projet de Fin d'Études - Master IT**
+**Projet Master IT**
 **Encadrant :** Abdelhak Mahmoudi
 
 ## 📖 Contexte du Projet
@@ -164,4 +164,3 @@ npm run dev
 
 - **SOURASSI Bouchra** 
 - **SAADANI Fatima**
-```
