@@ -1,4 +1,3 @@
-
 # 💊 PharmaPredict - Medication Demand Prediction & Restocking API
 
 **Projet Master IT**
@@ -6,7 +5,7 @@
 
 ## 📖 Contexte du Projet
 
-La gestion des stocks dans le secteur pharmaceutique est un défi majeur. Une mauvaise anticipation de la demande peut entraîner des ruptures de stock (pertes de ventes et risques sanitaires) ou un surstock (immobilisation de trésorerie et péremption des produits). 
+La gestion des stocks dans le secteur pharmaceutique est un défi majeur. Une mauvaise anticipation de la demande peut entraîner des ruptures de stock (pertes de ventes et risques sanitaires) ou un surstock (immobilisation de trésorerie et péremption des produits).
 
 **PharmaPredict** est un système d'aide à la décision basé sur le Machine Learning, capable d'analyser les données historiques de vente d'une pharmacie pour estimer la demande future et générer des recommandations de réapprovisionnement priorisées.
 
@@ -15,10 +14,10 @@ La gestion des stocks dans le secteur pharmaceutique est un défi majeur. Une ma
 - 📊 **Tableau de bord analytique** : Visualisation des KPIs, tendances de vente, et impact des saisons/jours fériés.
   <img width="1891" height="909" alt="image" src="https://github.com/user-attachments/assets/d3a2639a-8fda-4802-9ac0-092fb5c75f72" />
 - 🔍 **Médicaments** : Affiche l'état du stock en temps réel avec un code couleur (rouge si critique, vert si suffisant) et permet d'accéder à l'audit détaillé de chaque produit en un clic.
-<img width="1633" height="746" alt="image" src="https://github.com/user-attachments/assets/b0e80af4-0bda-4ab8-8163-3ddf9ceeb2bc" />
+  <img width="1633" height="746" alt="image" src="https://github.com/user-attachments/assets/b0e80af4-0bda-4ab8-8163-3ddf9ceeb2bc" />
 
 - 🧠 **Prédiction par Intelligence Artificielle** : Modèle Random Forest prédisant la demande en tenant compte du contexte temporel marocain.
-<img width="1645" height="848" alt="image" src="https://github.com/user-attachments/assets/1f21c019-a5e4-4768-9ecf-197ad39edf4f" />
+  <img width="1645" height="848" alt="image" src="https://github.com/user-attachments/assets/1f21c019-a5e4-4768-9ecf-197ad39edf4f" />
 
 - ⚠️ **Recommandations de réapprovisionnement** : Génération automatique des seuils de sécurité, des priorités (HAUTE, MOYENNE, BASSE) et des quantités exactes à commander.
   <img width="1625" height="835" alt="image" src="https://github.com/user-attachments/assets/ac5685ee-4c6b-4809-9793-87e63dd38829" />
@@ -27,8 +26,7 @@ La gestion des stocks dans le secteur pharmaceutique est un défi majeur. Une ma
   <img width="927" height="706" alt="image" src="https://github.com/user-attachments/assets/9cde62b7-4abd-400d-a6ff-6a542f698a7a" />
 
 - 🔍 **Transparence du modèle** : Page dédiée affichant les métriques de performance (MAE, R²) et l'importance des variables (Feature Importance).
-<img width="1625" height="834" alt="image" src="https://github.com/user-attachments/assets/b78b898d-7719-41d8-8fb4-de02ec2a2247" />
-
+  <img width="1625" height="834" alt="image" src="https://github.com/user-attachments/assets/b78b898d-7719-41d8-8fb4-de02ec2a2247" />
 
 ## 🏗️ Architecture du Système
 
@@ -41,6 +39,7 @@ Le projet suit une architecture découplée Client-Serveur basée sur le pattern
 ## 🛠️ Stack Technologique
 
 **Backend & Data Science :**
+
 - Python 3.x
 - Pandas & NumPy (Manipulation des données)
 - Scikit-Learn (Machine Learning - Random Forest)
@@ -48,6 +47,7 @@ Le projet suit une architecture découplée Client-Serveur basée sur le pattern
 - Pickle (Sérialisation du modèle)
 
 **Frontend :**
+
 - React.js (via Vite)
 - TailwindCSS (Design & Responsive)
 - Recharts (Data Visualisation)
@@ -84,6 +84,7 @@ PharmaPredict/
 ### Prérequis
 
 Assurez-vous d'avoir installé sur votre machine :
+
 - [Python 3.8+](https://www.python.org/downloads/) (Cochez "Add Python to PATH" lors de l'installation)
 - [Node.js 18+](https://nodejs.org/)
 - [Git](https://git-scm.com/)
@@ -128,14 +129,10 @@ npm install
 
 ### 4. Lancement de l'application
 
-Vous avez deux options pour lancer le projet :
+pour lancer le projet :
 
-**Option A : Le Pipeline Automatisé (Recommandé pour la démo)**
-Double-cliquez sur le fichier `DEMARRER_PROJET.bat` à la racine du projet. Il va générer les données, entraîner le modèle, lancer l'API et le Frontend automatiquement.
+_Terminal 1 (Backend) - Dans le dossier `backend` (avec venv activé) :_
 
-**Option B : Lancement Manuel (Pour le développement)**
-
-*Terminal 1 (Backend) - Dans le dossier `backend` (avec venv activé) :*
 ```bash
 # Générer les données et entraîner le modèle (à faire une seule fois)
 python generate_data.py
@@ -145,7 +142,8 @@ python model_training.py
 uvicorn api:app --reload --port 8000
 ```
 
-*Terminal 2 (Frontend) - Dans le dossier `frontend` :*
+_Terminal 2 (Frontend) - Dans le dossier `frontend` :_
+
 ```bash
 npm run dev
 ```
@@ -164,15 +162,15 @@ npm run dev
 
 ## 📬 Endpoints API Principaux
 
-| Méthode | Endpoint | Description |
-|---------|----------|-------------|
-| `GET` | `/api/dashboard` | Statistiques globales pour le tableau de bord |
-| `GET` | `/api/medicaments` | Liste de tous les médicaments |
-| `GET` | `/api/recommendations` | Liste des recommandations de réapprovisionnement |
-| `POST`| `/api/predict` | Prédiction à la demande (Simulateur) |
-| `GET` | `/api/model/metrics` | Métriques du modèle (MAE, R²) |
+| Méthode | Endpoint               | Description                                      |
+| ------- | ---------------------- | ------------------------------------------------ |
+| `GET`   | `/api/dashboard`       | Statistiques globales pour le tableau de bord    |
+| `GET`   | `/api/medicaments`     | Liste de tous les médicaments                    |
+| `GET`   | `/api/recommendations` | Liste des recommandations de réapprovisionnement |
+| `POST`  | `/api/predict`         | Prédiction à la demande (Simulateur)             |
+| `GET`   | `/api/model/metrics`   | Métriques du modèle (MAE, R²)                    |
 
 ## 👥 Auteurs
 
-- **SOURASSI Bouchra** 
+- **SOURASSI Bouchra**
 - **SAADANI Fatima**
