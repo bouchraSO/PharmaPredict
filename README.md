@@ -92,7 +92,7 @@ Assurez-vous d'avoir installé sur votre machine :
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/VotrePseudo/PharmaPredict.git
+git clone https://github.com/bouchraSO/PharmaPredict.git
 cd PharmaPredict
 ```
 
