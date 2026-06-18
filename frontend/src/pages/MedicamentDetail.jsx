@@ -76,27 +76,34 @@ export default function MedicamentDetail() {
             </div>
           </div>
 
-          <div className="bg-white rounded-xl border p-6">
+            <div className="bg-white rounded-xl border p-6">
             <h3 className="font-semibold text-gray-800 mb-4">Recommandation de Réapprovisionnement</h3>
             <div className="space-y-3">
+              
+              {/* Ligne Priorité */}
               <div className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
                 <span className="text-gray-600">Priorité</span>
                 <PriorityBadge priorite={recommendation.priorite} />
               </div>
+
+              {/* Ligne Action */}
               <div className="flex justify-between p-3 bg-gray-50 rounded-lg">
                 <span className="text-gray-600">Action</span>
                 <span className={`font-semibold ${recommendation.action === 'RÉAPPROVISIONNER' ? 'text-red-600' : 'text-green-600'}`}>
                   {recommendation.action}
                 </span>
               </div>
-              {medicament && prediction && (prediction.seuil_reappro > medicament.stock_actuel) && (
-                <div className="flex justify-between p-3 bg-orange-50 rounded-lg">
+
+              {/* Carré Orange (Quantité) - Affiché UNIQUEMENT si l'action est de réapprovisionner */}
+              {recommendation.action === 'RÉAPPROVISIONNER' && (
+                <div className="flex justify-between p-3 bg-orange-50 rounded-lg border border-orange-200">
                   <span className="text-gray-600">Quantité à commander</span>
                   <span className="font-bold text-orange-700 text-xl">
-                    {Math.round(prediction.seuil_reappro - medicament.stock_actuel)} unités
+                    {Math.max(0, Math.round(prediction.seuil_reappro - medicament.stock_actuel))} unités
                   </span>
                 </div>
               )}
+
             </div>
           </div>
         </div>
